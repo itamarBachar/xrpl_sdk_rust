@@ -135,7 +135,7 @@ impl Client {
             .post(&self.base_url)
             .body(body)
             .header(reqwest::header::USER_AGENT, &self.user_agent)
-            .bearer_auth(&self.token)
+            .header(reqwest::header::CONTENT_TYPE, "application/json")
             .send()
             .await?;
 
