@@ -14,8 +14,7 @@ pub trait Transaction: Serialize {
 #[repr(u16)]
 #[derive(Clone, Copy, PartialEq, Eq, Debug, serde::Serialize, serde::Deserialize)]
 pub enum TransactionType {
-   // Discriminant values can be found at https://github.com/XRPLF/xrpl.js/blob/main/packages/ripple-binary-codec/src/enums/definitions.json
-    Invalid = -1,
+   // Discriminant values can be found at https://github.com/XRPLF/xrpl.js/blob/main/packages/ripple-binary-codec/src/enums/definitions.json        
     Payment = 0,
     EscrowCreate = 1,
     EscrowFinish = 2,
