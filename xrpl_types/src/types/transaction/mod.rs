@@ -44,6 +44,8 @@ pub enum TransactionType {
     NFTokenCancelOffer = 28,
     NFTokenAcceptOffer = 29,
     Clawback = 30,
+    OracleDelete = 31,
+    OracleSet = 32,
     AMMCreate = 35,
     AMMDeposit = 36,
     AMMWithdraw = 37,
